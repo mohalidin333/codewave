@@ -11,7 +11,7 @@ export default function CaseStudies() {
       industry: "Logistics",
       description:
         "We built a real-time fleet and shipment tracking system that reduced delivery delays by 30% and optimized operational efficiency.",
-      image: "/case-logistics.jpg",
+      image: "/case_studies/logistics.jpg",
       link: "/case-studies/logistics",
     },
     {
@@ -20,7 +20,7 @@ export default function CaseStudies() {
       industry: "Fintech",
       description:
         "Developed a secure mobile-first banking platform enabling 2M+ users to access digital wallets, loans, and investments seamlessly.",
-      image: "/case-fintech.jpg",
+      image: "/case_studies/fintech.jpg",
       link: "/case-studies/fintech",
     },
     {
@@ -29,17 +29,16 @@ export default function CaseStudies() {
       industry: "Healthcare",
       description:
         "Implemented a cloud-based EHR system for hospitals, improving patient data accuracy and compliance with HIPAA regulations.",
-      image: "/case-healthcare.jpg",
+      image: "/case_studies/healthcare.jpg",
       link: "/case-studies/healthcare",
     },
   ];
 
   return (
-    <section className="bg-gray-50 py-20">
-      <div className="container mx-auto px-6">
+    <section className="">
+      <div className="sub-container">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <Briefcase className="w-12 h-12 text-blue-600 mx-auto mb-4" />
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Case Studies</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Explore how we’ve helped businesses across industries achieve
@@ -52,7 +51,7 @@ export default function CaseStudies() {
           {caseStudies.map((study) => (
             <div
               key={study.id}
-              className="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden"
+              className="bg-white rounded-2xl shadow hover:shadow-md transition overflow-hidden"
             >
               <div className="h-48 w-full bg-gray-200">
                 {/* Placeholder image */}

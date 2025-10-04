@@ -4,16 +4,16 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <section id="about" className="bg-white">
+      <div className="sub-container grid md:grid-cols-2 gap-12 items-center">
         
         {/* Left: Image / Illustration */}
-        <div className="relative w-full h-80 md:h-full">
+        <div className="relative flex justify-start w-full h-80 md:h-full">
           <Image
-            src="/about-illustration.jpg" // replace with company/team image or illustration
+            src="/about.svg" // replace with company/team image or illustration
             alt="About CodeWave Solutions"
             fill
-            className="object-cover rounded-2xl shadow-lg"
+            className="object-cover"
           />
         </div>
 

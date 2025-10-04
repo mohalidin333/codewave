@@ -38,8 +38,8 @@ export default function Faqs() {
   };
 
   return (
-    <section className="bg-white py-20 px-6 lg:px-20">
-      <div className="max-w-4xl mx-auto">
+    <section className="bg-white">
+      <div className="max-w-[1000px] mx-auto px-6 py-[5rem]">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-extrabold mb-4">
@@ -56,7 +56,7 @@ export default function Faqs() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border rounded-xl shadow-sm hover:shadow-md transition"
+              className="border border-gray-500 rounded-xl shadow-sm hover:shadow-md transition"
             >
               <button
                 onClick={() => toggleFaq(index)}

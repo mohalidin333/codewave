@@ -12,7 +12,7 @@ export default function Blog() {
         "Explore the latest innovations in AI, cloud, and automation that are shaping the future of software development.",
       date: "September 15, 2025",
       author: "CodeWave Insights Team",
-      image: "/blog-software-trends.jpg",
+      image: "/blog/software.jpg",
       link: "/blog/software-trends-2025",
     },
     {
@@ -22,7 +22,7 @@ export default function Blog() {
         "A deep dive into the role of fintech in reshaping payment systems, digital banking, and financial inclusion.",
       date: "August 28, 2025",
       author: "Jane Doe",
-      image: "/blog-fintech.jpg",
+      image: "/blog/fintech.jpg",
       link: "/blog/fintech-transforming-payments",
     },
     {
@@ -32,17 +32,16 @@ export default function Blog() {
         "Discover how to migrate to the cloud while ensuring data security, compliance, and scalability.",
       date: "July 10, 2025",
       author: "John Smith",
-      image: "/blog-cloud.jpg",
+      image: "/blog/cloud.jpg",
       link: "/blog/secure-cloud-migration",
     },
   ];
 
   return (
-    <section className="bg-gray-50 py-20">
-      <div className="container mx-auto px-6">
+    <section className="">
+      <div className="sub-container">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <PenSquare className="w-12 h-12 text-blue-600 mx-auto mb-4" />
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Latest Insights</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Stay up to date with technology trends, best practices, and our

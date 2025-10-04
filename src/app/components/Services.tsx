@@ -37,8 +37,8 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6 text-center">
+    <section >
+      <div className="sub-container mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-800">
           Our Services
         </h2>
@@ -47,7 +47,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition"
+              className="bg-white rounded-2xl shadow p-8 hover:shadow-md transition"
             >
               <div className="flex justify-center mb-6">{service.icon}</div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">

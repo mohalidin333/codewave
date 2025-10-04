@@ -1,5 +1,6 @@
 "use client";
 
+import { Laptop } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -8,10 +9,14 @@ export default function Header() {
   const [industriesOpen, setIndustriesOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 left-0 w-full bg-white shadow-sm z-50">
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="sticky top-0 left-0 w-full bg-white shadow-sm z-50 px-6 py-4">
+      <div className="max-w-[1200px] mx-auto flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-blue-600">
+        <Link
+          href="/"
+          className="flex items-center gap-2 text-2xl font-bold text-blue-600"
+        >
+          <Laptop className="inline-block" />
           CodeWave
         </Link>
 

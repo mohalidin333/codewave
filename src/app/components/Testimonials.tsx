@@ -31,8 +31,8 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="bg-gray-50 py-20 px-6 lg:px-20">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="">
+      <div className="sub-container text-center">
         {/* Section Header */}
         <h2 className="text-3xl lg:text-4xl font-extrabold mb-6">
           What Our Clients Say
@@ -47,7 +47,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-left"
+              className="bg-white p-6 rounded-2xl shadow hover:shadow-md transition text-left"
             >
               {/* Stars */}
               <div className="flex mb-4 text-yellow-400">
@@ -63,13 +63,9 @@ export default function Testimonials() {
 
               {/* Client Info */}
               <div className="flex items-center gap-4">
-                <Image
-                  width={100}
-                  height={100}
-                  src={testimonial.avatar}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover border"
-                />
+                <div className="bg-gray-200 rounded-full flex shrink-0 w-12 h-12 text-center items-center justify-center">
+                  <p className="text-xl">{testimonial.name[0]}</p>
+                </div>
                 <div>
                   <p className="font-semibold text-gray-900">
                     {testimonial.name}

@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
-      <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12">
+    <section className="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+      <div className="sub-container flex gap-4 md:flex-row flex-col">
         {/* Left Content */}
-        <div className="text-center md:text-left md:w-1/2">
+        <div className="w-full flex flex-col md:items-start items-center md:text-left text-center md:order-1 order-2">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
             Transforming Ideas <br /> Into Digital Solutions
           </h1>
@@ -34,11 +34,11 @@ export default function Hero() {
         </div>
 
         {/* Right Content (Image/Illustration) */}
-        <div className="md:w-1/2 flex justify-center">
+        <div className="md:w-full  flex justify-center md:order-2 order-1">
           <Image
             width={500}
             height={500}
-            src="/hero-illustration.png"
+            src="/hero.svg"
             alt="Hero Illustration"
             className="w-full max-w-md"
           />

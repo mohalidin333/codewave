@@ -42,8 +42,8 @@ export default function Industries() {
   ];
 
   return (
-    <section className="bg-gray-50 py-20" id="industries">
-      <div className="container mx-auto px-6 text-center">
+    <section id="industries">
+      <div className="sub-container text-center">
         {/* Section Header */}
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
           Industries We Serve
@@ -58,7 +58,7 @@ export default function Industries() {
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition"
+              className="bg-white p-8 rounded-2xl shadow hover:shadow-md transition"
             >
               <div className="flex justify-center mb-4">{industry.icon}</div>
               <h3 className="text-xl font-semibold mb-3">{industry.title}</h3>
