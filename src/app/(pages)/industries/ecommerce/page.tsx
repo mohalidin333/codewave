@@ -27,8 +27,8 @@ export default function EcommercePage() {
         <p className="text-gray-600 leading-relaxed">
           Today’s e-commerce landscape is fast-paced and customer-driven. At{" "}
           <span className="font-semibold">CodeWave</span>, we design and build
-          end-to-end commerce solutions — from online stores to multi-vendor
-          platforms — that are optimized for performance, security, and user
+          end-to-end commerce solutions, from online stores to multi-vendor
+          platforms, that are optimized for performance, security, and user
           experience.
         </p>
       </section>

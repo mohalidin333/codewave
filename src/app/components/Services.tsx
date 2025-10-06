@@ -37,12 +37,19 @@ export default function Services() {
   ];
 
   return (
-    <section >
-      <div className="sub-container mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-800">
+    <section className="py-20 bg-gray-50">
+      <div className="container mx-auto px-6 text-center">
+        {/* Title + Subtitle */}
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
           Our Services
         </h2>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+          We craft tailored digital solutions designed to help your business
+          innovate, scale, and succeed in today’s fast-changing technology
+          landscape.
+        </p>
 
+        {/* Service Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-16">
           {services.map((service, index) => (
             <div
@@ -53,7 +60,9 @@ export default function Services() {
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
                 {service.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">{service.description}</p>
+              <p className="text-gray-600 leading-relaxed">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>
@@ -65,7 +74,8 @@ export default function Services() {
               Ready to Start Your Project?
             </h3>
             <p className="text-gray-100 max-w-xl">
-              Let&apos;s collaborate and build scalable, innovative solutions for your business.
+              Let&apos;s collaborate and build scalable, innovative solutions
+              for your business.
             </p>
           </div>
           <Link
